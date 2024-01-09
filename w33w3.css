@@ -1,0 +1,120 @@
+body{
+    color: #ffff00;
+	background: linear-gradient(black 20%, white 50%, red 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+
+}
+
+body a, h1, h2, p {
+    font-family: Segoe script;
+    text-decoration: none;
+    text-shadow:2px 2px 2px black;
+}
+
+header {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 10%;
+    background-color: black;   
+}
+
+header>h1 {
+    font-family: Segoe script;
+    color: darkred;
+}
+main{
+    position: absolute;
+                left: 15%;
+                top: 70px;
+                bottom: 0px;
+                overflow: auto;
+    height:80%;
+    width: 85%;
+}
+
+h2 {
+    position: relative;
+    left: 5%;
+    max-width: 600px;
+}
+article {
+    height : 100px;
+    overflow: auto;
+    border: 5px solid darkred;
+    background: rgba(92, 92, 92, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    position: absolute;
+    left:5%;
+    right:5%;
+    
+}
+
+@keyframes zmenaSirky {
+    from {height: 100px;}
+    to {height: 400px;}
+}
+article:hover {
+    animation-name: zmenaSirky;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+nav {
+    height: 500px;
+    width: 200px;
+    position: absolute;
+    top: 70px;
+    bottom: 0px;
+    left: 0;
+    background: rgba(92, 92, 92, 0.5);
+    padding: 20px;
+    text-align: left;
+    border: 5px solid #ffff00;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: auto;
+    }
+
+nav a:link, nav a:visited {
+    color: #ffff00;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+nav a:hover, nav a:active {
+    position: relative;
+    opacity: 1;
+    color:#ffff00;
+    background: darkred;
+}
+
+nav a {
+    opacity: 0.5;
+    display: block;
+    font-size: 32px;
+    
+    
+
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 10%;
+    background-color: red;
+    z-index: 1;
+}
